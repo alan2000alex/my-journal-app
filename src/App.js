@@ -14,7 +14,7 @@ class App extends Component {
 
     this.setState({
       entries: entries.filter ((entry, i) => {
-        return i != index
+        return i !== index
       })
     })
   }
@@ -28,7 +28,7 @@ class App extends Component {
     
     return (
       <div className="App">
-        <h1>My Journal App</h1>
+        <h1>Alan's Journal</h1>
         <Entries entryData={entries} removeEntry={this.removeEntry}/>
         <Form handleSubmit={this.handleSubmit}/>
       </div>
